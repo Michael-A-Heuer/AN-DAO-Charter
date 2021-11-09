@@ -20,7 +20,6 @@
 
 % Coloring, Graphics, and Hyperlinks
 \usepackage{xcolor,graphicx}
-\definecolor{Main-Color-1}{rgb}{0,0.76078,1}
 \definecolor{Aragon-Blue}{rgb}{0.2353,0.5412,1}
 \usepackage[
 	breaklinks=true,
@@ -87,6 +86,11 @@
 
 % Deeper Enumerations
 \usepackage{enumitem}
+\setlist{
+	nosep,
+	topsep=4pt,
+	parsep=0.5\parskip
+}
 \setlistdepth{5}
 \renewlist{enumerate}{enumerate}{5}
 \setlist[enumerate,1]{label=\arabic*.}
@@ -115,5 +119,5 @@
 
 \newcommand{\subsectionitem}[1]{
 	\addcontentsline{toc}{subsection}{#1}
-	\item #1
+	\item \textbf{#1}
 }
