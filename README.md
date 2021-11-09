@@ -1,7 +1,7 @@
 # Aragon Network DAO Charter
 
 This repository contains the `LaTeX` source files of the charter of the [Aragon Network DAO](https://andao.aragon.org/) resulting in the charter `AN-DAO-Charter.pdf` document. 
-The charter document versions are [released on GitHub](https://github.com/Michael-A-Heuer/AN-DAO-Charter)
+The charter document versions are [released on GitHub](https://github.com/Michael-A-Heuer/AN-DAO-Charter/releases)
 and published via `IPFS`.
 
 
