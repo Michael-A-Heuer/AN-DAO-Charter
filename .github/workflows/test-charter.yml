@@ -1,0 +1,27 @@
+name: 'Tests the Aragon Network DAO Charter'
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Tectonic Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/Tectonic
+          key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
+          restore-keys: |
+           ${{ runner.os }}-tectonic-
+      - uses: wtfjoke/setup-tectonic@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Gitinfo
+        run: ./gitinfo.sh
+      - name: First Tectonic Run
+        run: tectonic network-dao-charter.tex
+      - name: Second Tectonic Run
+        run: tectonic network-dao-charter.tex

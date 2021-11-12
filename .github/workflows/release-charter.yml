@@ -1,4 +1,5 @@
-name: 'Release the Aragon Network DAO Charter'
+name: 'Releases the Aragon Network DAO Charter'
+
 on:
   push:
     # Pattern matched against refs/tags
