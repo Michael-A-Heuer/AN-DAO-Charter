@@ -1,4 +1,4 @@
-%!TEX root = AN-DAO-Charter.tex
+%!TEX root = network-dao-charter.tex
 % SPDX-License-Identifier: CC-BY-SA-4.0
 
 \charterchapter{Aragon Governance Proposal Process}
@@ -10,16 +10,16 @@ The purpose of the \acf{AGP} process is to provide a structured process for maki
 	\sectionitem{Governance Bodies}
 	\begin{enumerate}
 		\item The following bodies will form part of the \ac{AGP} process and are collectively referred to as the \gls{AragonNetworkDAO}, composed of a Main \ac{DAO} and Sub-\acp{DAO}.
-		\item \textbf{Main \ac{DAO}:} an \gls{AragonGovern} \ac{DAO} that uses \gls{AragonVoice} voting to validate the community’s sentiment and then scheduling for on-chain execution on Govern, enabling \glspl{ANTHolder} to both exercise direct democracy (directly propose and approve proposals of any kind) and elect members to existing or new Sub-\acp{DAO}.
+		\item \textbf{Main \ac{DAO}:} an Aragon Govern \ac{DAO} that uses \gls{AragonVoice} voting to validate the community’s sentiment and then scheduling for on-chain execution on Govern, enabling \glspl{ANTHolder} to both exercise direct democracy (directly propose and approve proposals of any kind) and elect members to existing or new Sub-\acp{DAO}.
 		\item \textbf{Sub-\acp{DAO}:} \acp{DAO} controlled by the Main \ac{DAO}. At launch, the following Sub-\acp{DAO} will exist:
 		
 		\begin{enumerate}
-			\item \textbf{Executive Sub-\ac{DAO}:} an \gls{AragonGovern} \ac{DAO}, with permission for treasury management of the Operations Vault.
+			\item \textbf{Executive Sub-\ac{DAO}:} an Aragon Govern \ac{DAO}, with permission for treasury management of the Operations Vault.
 			\begin{enumerate}
 				\item The Executive Committee \ac{DAO} is governed on a do-ocracy basis (Optimistic Governance) by the Tech Committee Members.
 				\item Members of the Executive \ac{DAO} (``Executive Committee Members'') are elected by \glspl{ANTHolder} through a vote on the Main \ac{DAO}.
 			\end{enumerate}
-			\item \textbf{Compliance Sub-\ac{DAO}:} an \gls{AragonGovern} \ac{DAO}, with permission to veto proposals and actions in the Main \ac{DAO} and Sub-\acp{DAO} that represent a breach of this Charter and/or directly harm the \gls{AragonNetwork}.
+			\item \textbf{Compliance Sub-\ac{DAO}:} an Aragon Govern \ac{DAO}, with permission to veto proposals and actions in the Main \ac{DAO} and Sub-\acp{DAO} that represent a breach of this Charter and/or directly harm the \gls{AragonNetwork}.
 			\begin{enumerate}
 				\item The above shall not include actions or proposals to add and/or remove wallet addresses from the Compliance \ac{DAO}.
 				\item The compliance \ac{DAO} is governed on a do-ocracy basis (Optimistic Governance) by the Compliance Committee Members.
@@ -33,7 +33,7 @@ The purpose of the \acf{AGP} process is to provide a structured process for maki
 
 		\end{enumerate}
 		
-		\item \textbf{Aragon Court:}\todo{Ref?} Used to challenge the actions scheduled on both the Main \ac{DAO} and any Sub-\ac{DAO}, and directly from the Voice UI / or the custom UI for AN \ac{DAO}.
+		\item \textbf{Aragon Court:} Used to challenge the actions scheduled on both the Main \ac{DAO} and any Sub-\ac{DAO}, and directly from the Voice UI / or the custom UI for AN \ac{DAO}.
 	\end{enumerate}
 	
 	\sectionitem{Separation of Powers}
@@ -41,7 +41,6 @@ The purpose of the \acf{AGP} process is to provide a structured process for maki
 		\item The same members shall not be part of more than one of the following: the Executive Sub-\ac{DAO}, Compliance Sub-\ac{DAO}, Tech Committee, and Guardians in \gls{AragonCourt} mainnet.
 		\item When a decentralised identity solution is integrated into the \ac{DAO}, members of these committees shall prove their unique identity using said solution.
 	\end{enumerate}
-
 
 	\sectionitem{Formation of new Sub-DAOs}
 	\begin{enumerate}
@@ -121,25 +120,24 @@ The purpose of the \acf{AGP} process is to provide a structured process for maki
 			\item \textbf{Voting:} the proposal (or a revised version of the proposal incorporating the community’s feedback) is posted for a vote on \gls{AragonVoice}.
 			\begin{enumerate}
 				\item For calculating voting power, 1 \ac{ANT} token = 1 Vote.
-				\item \textbf{Approval:} a proposal is deemed approved and scheduled for execution if the following conditions are reached:
-				\begin{enumerate}
-					\item Quorum: a minimum of five thousand (5,000) \ac{ANT} has
-					been used to vote.
-					\item  Support: The vote shall be deemed as “passed” with a
-					simple majority (>50\%) of the participating \ac{ANT} having
-					voted in favour.
-				\end{enumerate}
-	
-				\item When a proposal includes a code submission, the Tech Committee has up to 14 days to decide and communicate via a post in Aragon Forum whether a proposal will be:
-				\begin{enumerate}
-					\item Accepted and incorporated.
-					\item Submitted to a 3rd party audit to determine its safety
-					(conditional on the Operations Vault having the necessary
-					funds).
-					\item Rejected as malicious, technically infeasible, or
-					economically infeasible (if an audit is required and the Operations Vault lacks the necessary funds to cover the costs of the audit).
-				\end{enumerate}
 			\end{enumerate}
+		
+			\item \textbf{Approval:} a proposal is deemed approved and scheduled for execution if the following conditions are reached:
+			\begin{enumerate}
+				\item Quorum: a minimum of five thousand (5,000) \ac{ANT} has
+				been used to vote.
+				\item  Support: The vote shall be deemed as “passed” with a
+				simple majority (>50\%) of the participating \ac{ANT} having
+				voted in favour.
+			\end{enumerate}
+	
+			\item When a proposal includes a code submission, the Tech Committee has up to 14 days to decide and communicate via a post in Aragon Forum whether a proposal will be:
+			\begin{enumerate}
+				\item Accepted and incorporated.
+				\item Submitted to a 3rd party audit to determine its safety (conditional on the Operations Vault having the necessary funds).
+				\item Rejected as malicious, technically infeasible, or
+				economically infeasible (if an audit is required and the Operations Vault lacks the necessary funds to cover the costs of the audit).
+			\end{enumerate}		
 		\end{enumerate}
 		
 		\subsectionitem{Process for Elections}\textbf{:} in sequential order:
