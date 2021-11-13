@@ -8,7 +8,7 @@ The Charter versions are [released on GitHub](https://github.com/aragon/network-
 
 The Charter currently in force is referenced by its [IPFS CID](https://docs.ipfs.io/concepts/content-addressing) in the
 [Aragon Network Main DAO](https://govern.aragon.org/#/daos/an_main_dao) deployed at the Ethereum address 
-[0x6f83255e5245be5904717ecd9e9895f76f21ba08](https://etherscan.io/address/0x6f83255e5245be5904717ecd9e9895f76f21ba08).
+[0x9c1d24318966793a68e6005eb6b27edace3f28b8](https://etherscan.io/address/0x9c1d24318966793a68e6005eb6b27edace3f28b8).
 
 
 ## Corrections and Amendments
