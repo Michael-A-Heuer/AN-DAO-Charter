@@ -1,4 +1,4 @@
-name: 'Releases the Aragon Network DAO Charter'
+name: 'Release the Aragon Network DAO Charter'
 
 on:
   push:

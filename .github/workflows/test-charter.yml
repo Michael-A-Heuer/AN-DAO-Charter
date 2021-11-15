@@ -1,4 +1,4 @@
-name: 'Tests the Aragon Network DAO Charter'
+name: 'Test the Aragon Network DAO Charter'
 
 on: [pull_request]
 
